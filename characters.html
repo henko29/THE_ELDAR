@@ -259,7 +259,204 @@
 <body class="characters-page">
 <header class="site-header"><div class="nav-wrap"><a class="brand" href="index.html"><div class="brand-mark"><span>E</span></div><div class="brand-text"><strong>ELDAR ARCHIVE</strong><small>엘다르 이야기 | 공식 설정집</small></div></a><nav class="main-nav"><a class="nav-link" href="index.html">세계관 소개</a><a class="nav-link active" href="characters.html">인물 도감</a><a class="nav-link" href="regions.html">지역 &amp; 세력</a></nav></div></header>
 <main class="page-shell">
-<section class="hero character-hero"><div class="hero-content"><div class="eyebrow">People of Eldar · Archive Cards</div><h1>인물 도감</h1><p>국가와 세력별로 보존된 인물 기록. 각 카드에서 캐릭터의 전투 능력치를 확인할 수 있습니다! 하단의 <strong>과거 보기</strong>를 열면 해당 인물의 비하인드 스토리를 확인할 수 있습니다.</p></div></section>
+<section class="hero character-hero"><div class="hero-content"><div class="eyebrow">People of Eldar · Archive Cards</div><h1>인물 도감</h1><style>
+/* ===== 인물 도감 능력치 설명 ===== */
+.characters-page .stat-guide{
+  margin:18px 0 24px;
+  padding:18px;
+  border:1px solid rgba(222,190,116,.32);
+  border-radius:14px;
+  background:
+    linear-gradient(180deg,rgba(201,163,86,.08),rgba(0,0,0,.14)),
+    rgba(13,16,21,.62);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+.characters-page .stat-guide-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:13px;
+}
+
+.characters-page .stat-guide-title{
+  margin:0;
+  color:#f0ddb2;
+  font-size:1rem;
+  letter-spacing:.04em;
+}
+
+.characters-page .stat-guide-rule{
+  margin:0;
+  color:#b9aa8c;
+  font-size:.74rem;
+  line-height:1.55;
+  text-align:right;
+}
+
+.characters-page .stat-guide-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:9px;
+}
+
+.characters-page .stat-guide-item{
+  min-width:0;
+  padding:10px 11px;
+  border:1px solid rgba(222,190,116,.16);
+  border-radius:10px;
+  background:rgba(0,0,0,.18);
+}
+
+.characters-page .stat-guide-item strong{
+  display:block;
+  margin-bottom:4px;
+  color:#ead6a8;
+  font-size:.82rem;
+}
+
+.characters-page .stat-guide-item span{
+  display:block;
+  color:#bfb39c;
+  font-size:.75rem;
+  line-height:1.55;
+}
+
+.characters-page .stat-guide-item.accuracy{
+  border-color:rgba(193,169,108,.30);
+  background:rgba(201,163,86,.07);
+}
+
+.characters-page .stat-guide-foot{
+  margin:11px 2px 0;
+  color:#9e927b;
+  font-size:.7rem;
+  line-height:1.5;
+}
+
+@media(max-width:880px){
+  .characters-page .stat-guide-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .characters-page .stat-guide-head{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .characters-page .stat-guide-rule{
+    text-align:left;
+  }
+}
+
+@media(max-width:560px){
+  .characters-page .stat-guide{
+    padding:14px;
+  }
+
+  .characters-page .stat-guide-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
+<div class="stat-guide" aria-label="전투 능력치 안내">
+
+  <div class="stat-guide-head">
+    <h2 class="stat-guide-title">전투 능력치 안내</h2>
+
+    <p class="stat-guide-rule">
+      공격력 ↔ 방어력 ·
+      마법력 ↔ 항마력 ·
+      신비력 ↔ 신비저항 ·
+      명중률 ↔ 회피력
+    </p>
+  </div>
+
+  <div class="stat-guide-grid">
+
+    <div class="stat-guide-item">
+      <strong>🩸 HP</strong>
+      <span>
+        피해를 버틸 수 있는 최대 체력.
+        피해가 누적되어 0이 되면 전투를 지속할 수 없다.
+      </span>
+    </div>
+
+    <div class="stat-guide-item">
+      <strong>💪 공격력</strong>
+      <span>
+        검·창·주먹·화살 등 물리 공격의 위력 기준.
+        상대의 방어력에 대응한다.
+      </span>
+    </div>
+
+    <div class="stat-guide-item">
+      <strong>🧙 마법력</strong>
+      <span>
+        마법&신성 계열 공격과 효과의 위력 기준.
+        상대의 항마력에 대응한다.
+      </span>
+    </div>
+
+    <div class="stat-guide-item">
+      <strong>✨ 신비력</strong>
+      <span>
+        도깨비의 도술·악마와 드래곤의 권능 등 신비 계열 효과의 위력 기준.
+        상대의 신비저항에 대응한다.
+      </span>
+    </div>
+
+    <div class="stat-guide-item">
+      <strong>🛡️ 방어력</strong>
+      <span>
+        물리 공격을 견디는 능력.
+        높을수록 공격력 기반 피해를 효과적으로 버틴다.
+      </span>
+    </div>
+
+    <div class="stat-guide-item">
+      <strong>🔗 항마력</strong>
+      <span>
+        마법 공격과 마법적 효과, 신성력 등을 견디는 능력.
+        상대의 마법력에 대응한다.
+      </span>
+    </div>
+
+    <div class="stat-guide-item">
+      <strong>😖 신비저항</strong>
+      <span>
+        도술·드래곤or악마의 권능·봉인 등에 저항하는 능력.
+        상대의 신비력에 대응한다.
+      </span>
+    </div>
+
+    <div class="stat-guide-item">
+      <strong>🏃 회피력</strong>
+      <span>
+        공격 자체를 피하는 능력.
+        공격 측의 명중률과 비교하여 적중 여부를 판정한다.
+      </span>
+    </div>
+
+    <div class="stat-guide-item accuracy">
+      <strong>🎯 명중률</strong>
+      <span>
+        공격이 실제로 적중하는지를 결정하는 판정값.
+        카드의 여덟 가지 고정 능력치와는 별도로,
+        전투 시 상대의 회피력과 비교하여 명중률이 회피력보다 높으면 공격이 명중한다.
+      </span>
+    </div>
+
+  </div>
+
+  <p class="stat-guide-foot">
+    ※ 캐릭터 카드에는 여덟 가지 고정 능력치가 표시되며,
+    명중률은 전투 중 별도로 적용되는 적중 판정값이다.
+  </p>
+
+</div><p>국가와 세력별로 보존된 인물 기록. 각 카드에서 캐릭터의 전투 능력치를 확인할 수 있습니다! 하단의 <strong>과거 보기</strong>를 열면 해당 인물의 비하인드 스토리를 확인할 수 있습니다.</p></div></section>
 <section class="nation-roster" id="roster-delpiro"><div class="roster-title"><div><span class="kicker">Roster</span><h2>황금왕국 델피로</h2></div><span class="roster-count">7명</span></div><section class="faction-section"><div class="faction-heading"><span>왕실</span><small>1명</small></div><div class="game-card-grid"><article class="game-card-shell delpiro">
   <div class="game-card">
     <div class="card-topline"><span class="char-code">HAV</span><span class="gender-badge">♀</span></div>
