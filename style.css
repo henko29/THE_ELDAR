@@ -5,9 +5,16 @@
   padding: 14px;
 }
 
-.map-card img {
+.map-image-wrap {
+  width: 100%;
+  overflow: auto;
+}
+
+.map-image-wrap img {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: contain;
+  object-position: center;
   border-radius: 12px;
 }
