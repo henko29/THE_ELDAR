@@ -18,3 +18,8 @@
   object-position: center;
   border-radius: 12px;
 }
+
+/* ===== 미카레 아카데미 캐릭터 카드 ===== */
+.characters-page .game-card-shell.mikare{
+  --card-accent:#829bc9;
+}
