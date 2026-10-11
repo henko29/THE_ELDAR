@@ -24,7 +24,7 @@
   var TRACKS = [
     { title: '이 세계 위에서',        file: '이 세계 위에서 _ ELDAL TALE 메인 테마곡.mp3', main: true },
     { title: 'THIS PAGE',             file: 'THIS PAGE.mp3' },
-    { title: "What's your gold?",     file: 'What_s yout gold_.mp3' },
+    { title: "What's your gold?",     file: 'What_s your gold_.mp3' },
     { title: 'Summer Splash',         file: 'Summer Splash.mp3' },
     { title: '아름다운 세계',         file: '아름다운 세계.mp3' },
     { title: '방망이 대신 펜을 들고', file: '방망이 대신 펜을 들고.mp3' },
