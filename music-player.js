@@ -23,22 +23,22 @@
 
   var TRACKS = [
     { title: '이 세계 위에서',        file: '이 세계 위에서 _ ELDAL TALE 메인 테마곡.mp3', main: true },
-    { title: '이야기에 기원을 담아',  file: '이야기에 기원을 담아.mp3' },
-    { title: '모두의 수호자',         file: '모두의 수호자_.mp3' },
-    { title: '깜빡이는 등불',         file: '깜빡이는 등불.mp3' },
-    { title: '바람 씨앗',             file: '바람 씨앗.mp3' },
-    { title: '아이스베어',            file: '아이스베어.mp3' },
-    { title: '방망이 대신 펜을 들고', file: '방망이 대신 펜을 들고.mp3' },
-    { title: 'Green Rat',             file: 'Green Rat.mp3' },
-    { title: "What's your gold?",     file: 'What_s yout gold_.mp3' },
     { title: 'THIS PAGE',             file: 'THIS PAGE.mp3' },
-    { title: '일곱 나라의 방랑자',    file: '일곱 나라의 방랑자.mp3' },
-    { title: '아름다운 세계',         file: '아름다운 세계.mp3' },
+    { title: "What's your gold?",     file: 'What_s yout gold_.mp3' },
     { title: 'Summer Splash',         file: 'Summer Splash.mp3' },
-    { title: '내기 하나 할까요?',     file: '내기 하나 할까요_.mp3' },
+    { title: '아름다운 세계',         file: '아름다운 세계.mp3' },
+    { title: '방망이 대신 펜을 들고', file: '방망이 대신 펜을 들고.mp3' },
+    { title: '깜빡이는 등불',         file: '깜빡이는 등불.mp3' },
     { title: '뽑지 않은 검',          file: '뽑지 않은 검.mp3' },
     { title: 'MY EMPIRE',             file: 'MY EMPIRE.mp3' },
-    { title: '텅 빈 손',              file: '텅 빈 손.mp3' }
+    { title: '텅 빈 손',              file: '텅 빈 손.mp3' },
+    { title: '내기 하나 할까요?',     file: '내기 하나 할까요_.mp3' },
+    { title: '일곱 나라의 방랑자',    file: '일곱 나라의 방랑자.mp3' },
+    { title: 'Green Rat',             file: 'Green Rat.mp3' },
+    { title: '아이스베어',            file: '아이스베어.mp3' },
+    { title: '바람 씨앗',             file: '바람 씨앗.mp3' },
+    { title: '모두의 수호자',         file: '모두의 수호자_.mp3' },
+    { title: '이야기에 기원을 담아',  file: '이야기에 기원을 담아.mp3' }
   ];
 
   /* ===================================================== */
