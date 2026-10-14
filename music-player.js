@@ -39,7 +39,13 @@
     { title: '바람 씨앗',             file: '바람 씨앗.mp3' },
     { title: '모두의 수호자',         file: '모두의 수호자_.mp3' },
     { title: '이야기에 기원을 담아',  file: '이야기에 기원을 담아.mp3' },
-    { title: '목숨값',                file: '목숨값.mp3' }
+    { title: '목숨값',                file: '목숨값.mp3' },
+    { title: 'ThunderStep',           file: 'ThunderStep.mp3' },
+    { title: '모래와 송곳니',         file: '모래와 송곳니.mp3' },
+    { title: '나쁜 날의 약속',        file: '나쁜 날의 약속.mp3' },
+    { title: '남아있는 향기',         file: '남아있는 향기.mp3' },
+    { title: 'Bunny Hop!',            file: 'Bunny Hop!.mp3' },
+    { title: 'DROP KICK!',            file: 'DROP KICK!.mp3' }
   ];
 
   /* ===================================================== */
