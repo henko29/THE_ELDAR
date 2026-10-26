@@ -45,7 +45,13 @@
     { title: '나쁜 날의 약속',        file: '나쁜 날의 약속.mp3' },
     { title: '남아있는 향기',         file: '남아있는 향기.mp3' },
     { title: 'Bunny Hop!',            file: 'Bunny Hop!.mp3' },
-    { title: 'DROP KICK!',            file: 'DROP KICK!.mp3' }
+    { title: 'DROP KICK!',            file: 'DROP KICK!.mp3' },
+    { title: '역시 인심 하면 바다지?', file: '역시 인심 하면 바다지_.mp3' },
+    { title: '이상',                  file: '이상.mp3' },
+    { title: '내 뒤에 서',            file: '내 뒤에 서.mp3' },
+    { title: '번개같은 심판',         file: '번개같은 심판.mp3' },
+    { title: '오래된 횃불',           file: '오래된 횃불.mp3' },
+    { title: '구원',                  file: '구원.mp3' }
   ];
 
   /* ===================================================== */
