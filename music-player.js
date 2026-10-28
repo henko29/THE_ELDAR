@@ -51,7 +51,13 @@
     { title: '내 뒤에 서',            file: '내 뒤에 서.mp3' },
     { title: '번개같은 심판',         file: '번개같은 심판.mp3' },
     { title: '오래된 횃불',           file: '오래된 횃불.mp3' },
-    { title: '구원',                  file: '구원.mp3' }
+    { title: '구원',                  file: '구원.mp3' },
+    { title: 'The Climber',            file: 'The Climber.mp3' },
+    { title: 'The Diggers',            file: 'The Diggers.mp3' },
+    { title: 'Dullahan',               file: 'Dullahan.mp3' },
+    { title: '노래 하나, 이야기 여러 개', file: '노래 하나, 이야기 여러 개.mp3' },
+    { title: 'Name of this wind',      file: 'Name of this wind.mp3' },
+    { title: '날아라, 작은 날개야',    file: '날아라, 작은 날개야.mp3' }
   ];
 
   /* ===================================================== */
