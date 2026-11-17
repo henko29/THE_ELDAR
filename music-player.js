@@ -57,7 +57,12 @@
     { title: 'Dullahan',               file: 'Dullahan.mp3' },
     { title: '노래 하나, 이야기 여러 개', file: '노래 하나, 이야기 여러 개.mp3' },
     { title: 'Name of this wind',      file: 'Name of this wind.mp3' },
-    { title: '날아라, 작은 날개야',    file: '날아라, 작은 날개야.mp3' }
+    { title: '날아라, 작은 날개야',    file: '날아라, 작은 날개야.mp3' },
+    { title: 'Equal Eyes',             file: 'Equal Eyes.mp3' },
+    { title: '이면몽상',               file: '이면몽상.mp3' },
+    { title: "I'm fine, Blood",        file: "I'm fine, Blood.mp3" },
+    { title: 'Puppet',                 file: 'Puppet.mp3' },
+    { title: 'Eternal Response',       file: 'Eternal Response.mp3' }
   ];
 
   /* ===================================================== */
